@@ -1,0 +1,2407 @@
+﻿<?xml version = '1.0' encoding = 'UTF-8'?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xml:base="http://www.smartcloudinc.com/ontologies/TIS#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" ontologyIRI="http://www.smartcloudinc.com/ontologies/TIS#">
+  <Prefix name="" IRI="http://www.smartcloudinc.com/ontologies/TIS#" />
+  <Prefix name="dul" IRI="http://wwwontologydesignpatternsorg/ont/dul/DULowl#" />
+  <Prefix name="xml" IRI="http://wwww3org/XML/1998/namespace#" />
+  <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+  <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#" />
+  <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#" />
+  <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#" />
+  <SubClassOf>
+    <Class IRI="EndEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="EndEvent" />
+    <Class abbreviatedIRI="dul:Action" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="GlobalData" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="GlobalData" />
+    <Class abbreviatedIRI="dul:SocialObjectAttribute" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="Invoice" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="Invoice" />
+    <Class abbreviatedIRI="dul:InformationObject" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="InvoiceBatch" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="InvoiceBatch" />
+    <Class abbreviatedIRI="dul:InformationObject" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="InvoiceItem" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="InvoiceItem" />
+    <Class abbreviatedIRI="dul:InformationObject" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="KbAgent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="KbAgent" />
+    <Class abbreviatedIRI="dul:PhysicalAgent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="MessageEndEvent" />
+    <Class IRI="MessageEvent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="MessageEndEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="MessageEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="MessageEvent" />
+    <Class abbreviatedIRI="dul:Action" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="MessageIntermediateEvent" />
+    <Class IRI="MessageEvent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="MessageIntermediateEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="MessageStartEvent" />
+    <Class IRI="MessageEvent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="MessageStartEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="SignalEndEvent" />
+    <Class IRI="SignalEvent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="SignalEndEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="SignalEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="SignalEvent" />
+    <Class abbreviatedIRI="dul:Action" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="SignalInermediateEvent" />
+    <Class IRI="SignalEvent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="SignalInermediateEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="SignalStartEvent" />
+    <Class IRI="SignalEvent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="SignalStartEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="StartEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="StartEvent" />
+    <Class abbreviatedIRI="dul:Action" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TaxFraudInvestigator" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TaxFraudInvestigator" />
+    <Class abbreviatedIRI="dul:SocialPerson" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="Taxpayer" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="Taxpayer" />
+    <Class abbreviatedIRI="dul:SocialPerson" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TimerEndEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TimerEndEvent" />
+    <Class abbreviatedIRI="dul:Action" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TimerEvent" />
+    <Class IRI="TimerStartEvent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TimerEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TimerStartEvent" />
+    <Class IRI="TimerEvent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TimerStartEvent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TisAgent" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TisAgent" />
+    <Class abbreviatedIRI="dul:PhysicalAgent" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TisAnalyst" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="TisAnalyst" />
+    <Class abbreviatedIRI="dul:SocialPerson" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="ViolationStatus" />
+    <Class abbreviatedIRI="owl:Thing" />
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="ViolationStatus" />
+    <Class abbreviatedIRI="dul:SocialObjectAttribute" />
+  </SubClassOf>
+  <ClassAssertion>
+    <Class IRI="GlobalData" />
+    <NamedIndividual IRI="GlobalData1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaid" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.13</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="GlobalData1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasSystemTime" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-20T04:32:52</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="GlobalData1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="numbersOfTaxpayerInvoices" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="GlobalData1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="numbersOfTaxpayers" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="GlobalData1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="permittedsTolerance" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.03</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="GlobalData1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice10" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice2" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice3" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice4" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice5" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice6" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice7" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice8" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Invoice" />
+    <NamedIndividual IRI="Invoice9" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceBatch" />
+    <NamedIndividual IRI="InvoiceBatch1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <ObjectIntersectionOf>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice1" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice10" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice2" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice3" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice4" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice5" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice6" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice7" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice8" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+      <ObjectSomeValuesFrom>
+        <ObjectProperty IRI="hasInvoice" />
+        <ObjectOneOf>
+          <NamedIndividual IRI="Invoice9" />
+        </ObjectOneOf>
+      </ObjectSomeValuesFrom>
+    </ObjectIntersectionOf>
+    <NamedIndividual IRI="InvoiceBatch1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">141</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6581</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">852201</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">one widget to rule them all</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">12552.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2133.84</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">142</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6789</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">280194</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a social widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">52547.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.1</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">8917.69</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">123</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1100</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">830954</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">some kind of widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">125.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">21.25</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">124</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2200</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">836354</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a son of a widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">9685.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1646.45</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">125</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2999</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">163856</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a cheap widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.12</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.6</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">126</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3520</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">365836</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a more expensive widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10000.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1700.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">127</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3876</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">675413</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a widget bought by Pedro</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">162592.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.12</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">19511.04</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">128</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3001</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">816327</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">the favorite widget of Steve</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">161390.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">27436.3</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">129</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4813</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">597753</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">widget that looks like Mike</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">130056.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.12</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">15606.72</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">130</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4721</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">232119</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">manifest widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">127890.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">21741.3</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">131</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5825</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">731121</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a widget for the Queen</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">66739.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">11345.63</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">132</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5555</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3115</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">widget without a cause</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">98817.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">16798.89</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">133</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6543</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">168283</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a wingnut widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">52035.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">8845.95</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">134</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6989</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">302188</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a Republican widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">52473.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">8920.41</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">135</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6581</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">120538</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a god of all widgets</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">7785.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1323.45</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">136</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6789</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">242855</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a liberal widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">175962.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">29913.54</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">137</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6581</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">786229</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a widget maker</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">182832.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">31081.44</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">138</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6789</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">473904</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">a expensive widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200165.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">34028.05</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">139</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6581</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">594592</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN 34580184-1328, the widget princess</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">46525.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">7909.25</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="InvoiceItem" />
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceItemNumber" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">140</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasInvoiceOperationCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6789</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductCode" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">771738</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductDescription" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Willy the widget</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasProductTotalValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">213767.0</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxRate" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.17</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxValue" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">36340.39</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Taxpayer" />
+    <NamedIndividual IRI="TaxPayer1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaid" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.165</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaidDifference" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-0.035</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxpayerId" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36832</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer1" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Taxpayer" />
+    <NamedIndividual IRI="TaxPayer2" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaid" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.165</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer2" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaidDifference" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-0.035</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer2" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxpayerId" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38832</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer2" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Taxpayer" />
+    <NamedIndividual IRI="TaxPayer3" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaid" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.1</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer3" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaidDifference" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.03</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer3" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxpayerId" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">85362</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer3" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Taxpayer" />
+    <NamedIndividual IRI="TaxPayer4" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaid" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.163</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer4" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaidDifference" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-0.033</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer4" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxpayerId" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60261</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer4" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <Class IRI="Taxpayer" />
+    <NamedIndividual IRI="TaxPayer5" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaid" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.09</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer5" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasAverageTaxPaidDifference" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.04</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer5" />
+  </ClassAssertion>
+  <ClassAssertion>
+    <DataSomeValuesFrom>
+      <DataProperty IRI="hasTaxpayerId" />
+      <DataOneOf>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12098</Literal>
+      </DataOneOf>
+    </DataSomeValuesFrom>
+    <NamedIndividual IRI="TaxPayer5" />
+  </ClassAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice1" />
+    <NamedIndividual IRI="InvoiceItem11" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice1" />
+    <NamedIndividual IRI="InvoiceItem12" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice1" />
+    <NamedIndividual IRI="TaxPayer1" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice10" />
+    <NamedIndividual IRI="InvoiceItem101" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice10" />
+    <NamedIndividual IRI="InvoiceItem102" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice10" />
+    <NamedIndividual IRI="TaxPayer1" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice2" />
+    <NamedIndividual IRI="InvoiceItem22" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice2" />
+    <NamedIndividual IRI="InvoiceItem21" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice2" />
+    <NamedIndividual IRI="TaxPayer2" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice3" />
+    <NamedIndividual IRI="InvoiceItem32" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice3" />
+    <NamedIndividual IRI="InvoiceItem31" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice3" />
+    <NamedIndividual IRI="TaxPayer3" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice4" />
+    <NamedIndividual IRI="InvoiceItem41" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice4" />
+    <NamedIndividual IRI="InvoiceItem42" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice4" />
+    <NamedIndividual IRI="TaxPayer2" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice5" />
+    <NamedIndividual IRI="InvoiceItem52" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice5" />
+    <NamedIndividual IRI="InvoiceItem51" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice5" />
+    <NamedIndividual IRI="TaxPayer1" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice6" />
+    <NamedIndividual IRI="InvoiceItem61" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice6" />
+    <NamedIndividual IRI="InvoiceItem62" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice6" />
+    <NamedIndividual IRI="TaxPayer5" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice7" />
+    <NamedIndividual IRI="InvoiceItem71" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice7" />
+    <NamedIndividual IRI="InvoiceItem72" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice7" />
+    <NamedIndividual IRI="TaxPayer4" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice8" />
+    <NamedIndividual IRI="InvoiceItem81" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice8" />
+    <NamedIndividual IRI="InvoiceItem82" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice8" />
+    <NamedIndividual IRI="TaxPayer3" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice9" />
+    <NamedIndividual IRI="InvoiceItem92" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <NamedIndividual IRI="Invoice9" />
+    <NamedIndividual IRI="InvoiceItem91" />
+  </ObjectPropertyAssertion>
+  <ObjectPropertyAssertion>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <NamedIndividual IRI="Invoice9" />
+    <NamedIndividual IRI="TaxPayer2" />
+  </ObjectPropertyAssertion>
+  <EquivalentObjectProperties>
+    <ObjectProperty IRI="hasInvoice" />
+    <ObjectInverseOf>
+      <ObjectProperty IRI="isInvoiceOf" />
+    </ObjectInverseOf>
+  </EquivalentObjectProperties>
+  <SubObjectPropertyOf>
+    <ObjectProperty IRI="hasInvoice" />
+    <ObjectProperty abbreviatedIRI="dul:hasMember" />
+  </SubObjectPropertyOf>
+  <SubObjectPropertyOf>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <ObjectProperty abbreviatedIRI="dul:hasMember" />
+  </SubObjectPropertyOf>
+  <SubObjectPropertyOf>
+    <ObjectProperty IRI="isInvoiceItemOf" />
+    <ObjectProperty abbreviatedIRI="dul:isMemberOf" />
+  </SubObjectPropertyOf>
+  <SubObjectPropertyOf>
+    <ObjectProperty IRI="isInvoiceOf" />
+    <ObjectProperty abbreviatedIRI="dul:isMemberOf" />
+  </SubObjectPropertyOf>
+  <FunctionalObjectProperty>
+    <ObjectProperty IRI="hasTaxpayer" />
+  </FunctionalObjectProperty>
+  <FunctionalObjectProperty>
+    <ObjectProperty IRI="isInvoiceOf" />
+  </FunctionalObjectProperty>
+  <InverseFunctionalObjectProperty>
+    <ObjectProperty IRI="hasInvoice" />
+  </InverseFunctionalObjectProperty>
+  <ObjectPropertyDomain>
+    <ObjectProperty IRI="hasInvoice" />
+    <Class IRI="InvoiceBatch" />
+  </ObjectPropertyDomain>
+  <ObjectPropertyDomain>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <Class IRI="Invoice" />
+  </ObjectPropertyDomain>
+  <ObjectPropertyDomain>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <Class IRI="Invoice" />
+  </ObjectPropertyDomain>
+  <ObjectPropertyDomain>
+    <ObjectProperty IRI="isWasTriggeredBy" />
+    <Class IRI="ViolationStatus" />
+  </ObjectPropertyDomain>
+  <ObjectPropertyRange>
+    <ObjectProperty IRI="hasInvoice" />
+    <Class IRI="Invoice" />
+  </ObjectPropertyRange>
+  <ObjectPropertyRange>
+    <ObjectProperty IRI="hasInvoiceItem" />
+    <Class IRI="InvoiceItem" />
+  </ObjectPropertyRange>
+  <ObjectPropertyRange>
+    <ObjectProperty IRI="hasTaxpayer" />
+    <Class IRI="Taxpayer" />
+  </ObjectPropertyRange>
+  <ObjectPropertyRange>
+    <ObjectProperty IRI="isWasTriggeredBy" />
+    <Class IRI="Invoice" />
+  </ObjectPropertyRange>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasAverageTaxPaid" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasAverageTaxPaidDifference" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasCity" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasDateTime" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasFraudStatus" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasInvoiceId" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasInvoiceItemNumber" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasInvoiceOperationCode" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasItemCost" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasItemTaxStatus" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasOperationCodeStatus" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasPostalCode" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasProcessingStatus" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasProductCode" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasProductDescription" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasProductTotalValue" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasSystemTime" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasTaxRate" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasTaxValue" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasTaxpayerId" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="hasValidityStatus" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="numbersOfTaxpayerInvoices" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="numbersOfTaxpayers" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <SubDataPropertyOf>
+    <DataProperty IRI="permittedsTolerance" />
+    <DataProperty abbreviatedIRI="dul:hasDataValue" />
+  </SubDataPropertyOf>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasAverageTaxPaid" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasAverageTaxPaidDifference" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasFraudStatus" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasInvoiceItemNumber" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasInvoiceOperationCode" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasItemCost" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasProcessingStatus" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasProductCode" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasProductTotalValue" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasTaxRate" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasTaxValue" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasTaxpayerId" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="hasValidityStatus" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="numbersOfTaxpayerInvoices" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="numbersOfTaxpayers" />
+  </FunctionalDataProperty>
+  <FunctionalDataProperty>
+    <DataProperty IRI="permittedsTolerance" />
+  </FunctionalDataProperty>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasAverageTaxPaid" />
+    <Class IRI="Taxpayer" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasAverageTaxPaidDifference" />
+    <Class IRI="Taxpayer" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasCity" />
+    <Class IRI="Invoice" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasDateTime" />
+    <Class IRI="Invoice" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasFraudStatus" />
+    <Class IRI="Taxpayer" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasInvoiceId" />
+    <Class IRI="Invoice" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasInvoiceItemNumber" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasInvoiceOperationCode" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasItemTaxStatus" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasOperationCodeStatus" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasPostalCode" />
+    <Class IRI="Invoice" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasProcessingStatus" />
+    <Class IRI="Invoice" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasProductCode" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasProductDescription" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasProductTotalValue" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasSystemTime" />
+    <Class IRI="GlobalData" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasTaxRate" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasTaxValue" />
+    <Class IRI="InvoiceItem" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasTaxpayerId" />
+    <Class IRI="Taxpayer" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="hasValidityStatus" />
+    <Class abbreviatedIRI="dul:InformationObject" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="numbersOfTaxpayerInvoices" />
+    <Class IRI="GlobalData" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="numbersOfTaxpayers" />
+    <Class IRI="GlobalData" />
+  </DataPropertyDomain>
+  <DataPropertyDomain>
+    <DataProperty IRI="permittedsTolerance" />
+    <Class IRI="GlobalData" />
+  </DataPropertyDomain>
+  <DataPropertyRange>
+    <DataProperty IRI="hasAverageTaxPaid" />
+    <Datatype abbreviatedIRI="xsd:double" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasAverageTaxPaidDifference" />
+    <Datatype abbreviatedIRI="xsd:double" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasCity" />
+    <Datatype abbreviatedIRI="xsd:string" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasDateTime" />
+    <Datatype abbreviatedIRI="xsd:dateTime" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasFraudStatus" />
+    <Datatype abbreviatedIRI="xsd:string" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasInvoiceId" />
+    <Datatype abbreviatedIRI="xsd:integer" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasInvoiceItemNumber" />
+    <Datatype abbreviatedIRI="xsd:integer" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasInvoiceOperationCode" />
+    <DatatypeRestriction>
+      <Datatype abbreviatedIRI="xsd:integer" />
+      <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+      </FacetRestriction>
+      <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7999</Literal>
+      </FacetRestriction>
+    </DatatypeRestriction>
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasItemCost" />
+    <Datatype abbreviatedIRI="xsd:integer" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasItemTaxStatus" />
+    <Datatype abbreviatedIRI="xsd:string" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasOperationCodeStatus" />
+    <Datatype abbreviatedIRI="xsd:string" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasPostalCode" />
+    <Datatype abbreviatedIRI="xsd:integer" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasProcessingStatus" />
+    <DataOneOf>
+      <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Not Processed</Literal>
+      <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Processed</Literal>
+    </DataOneOf>
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasProductCode" />
+    <Datatype abbreviatedIRI="xsd:integer" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasProductDescription" />
+    <Datatype abbreviatedIRI="xsd:string" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasProductTotalValue" />
+    <Datatype abbreviatedIRI="xsd:double" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasSystemTime" />
+    <Datatype abbreviatedIRI="xsd:dateTime" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasTaxRate" />
+    <Datatype abbreviatedIRI="xsd:double" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasTaxValue" />
+    <Datatype abbreviatedIRI="xsd:double" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasTaxpayerId" />
+    <Datatype abbreviatedIRI="xsd:integer" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="hasValidityStatus" />
+    <DataOneOf>
+      <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">not-valid</Literal>
+      <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">valid</Literal>
+    </DataOneOf>
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="numbersOfTaxpayerInvoices" />
+    <Datatype abbreviatedIRI="xsd:integer" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="numbersOfTaxpayers" />
+    <Datatype abbreviatedIRI="xsd:integer" />
+  </DataPropertyRange>
+  <DataPropertyRange>
+    <DataProperty IRI="permittedsTolerance" />
+    <Datatype abbreviatedIRI="xsd:double" />
+  </DataPropertyRange>
+</Ontology>
+<!--Generated by Cognitum FluentEditor2, a part of Ontorion(TM) Knowledge Management Framework, (with support of OwlApi)-->
