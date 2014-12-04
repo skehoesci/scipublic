@@ -1,0 +1,2083 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.smartcloudinc.com/ontologies/TIS#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.smartcloudinc.com/ontologies/TIS#">
+    <Prefix name="" IRI="http://www.smartcloudinc.com/ontologies/TIS#"/>
+    <Prefix name="dul" IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="&xml;#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</Import>
+    <Import>http://www.w3.org/XML/1998/namespace</Import>
+    <Declaration>
+        <Class IRI="CancelledInvoice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MFE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Vendor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMFE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasVendor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ActivationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Amount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="AverageCountPerDay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="AverageInvoicesAmountPerDay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CFOPCodeFormatNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CFOPCodeFormatStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CFOPCodeStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CFOPStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CFOPcode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CNAE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CPF"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CPFStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CPFStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CancelledInvoicesStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CancelledInvoicesStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CurrentDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DailyAmountOfInvoicesSD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DailyCountOfInvoices"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DailyCountOfInvoicesSD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DailyInvoicesAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DeviceNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="FormOfPayment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="InactivityStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="InactivityStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="InvoiceCountStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="InvoiceCountStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="InvoicesAmountStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="InvoicesAmountStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="LastInvoiceReceivedData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MFEActivatedStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MFEActivatedStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MarketSegment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="NCM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="NCMFormatNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="NCMFormatStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="NCMStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="NCMStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="PaymentStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="PaymentStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="PermittedMFEInactivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RegisterNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="TaxSituationCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="TaxSituationCodeFormatNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="TaxSituationCodeFormatStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="TaxSituationCodeNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ValidityStatusNotification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="VendorID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="en_label"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="isUserModifiable"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="pt_BR_comment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="pt_BR_label"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="regex"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="percent"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Taxpayer"/>
+        <Class IRI="Vendor"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="CancelledInvoice"/>
+        <Class abbreviatedIRI="dul:InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EndEvent"/>
+        <Class abbreviatedIRI="dul:Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Invoice"/>
+        <Class abbreviatedIRI="dul:InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InvoiceBatch"/>
+        <Class abbreviatedIRI="dul:InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InvoiceItem"/>
+        <Class abbreviatedIRI="dul:InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="KbAgent"/>
+        <Class abbreviatedIRI="dul:PhysicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MFE"/>
+        <Class abbreviatedIRI="dul:DesignedArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MessageEndEvent"/>
+        <Class IRI="MessageEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MessageEvent"/>
+        <Class abbreviatedIRI="dul:Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MessageIntermediateEvent"/>
+        <Class IRI="MessageEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MessageStartEvent"/>
+        <Class IRI="MessageEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SignalEndEvent"/>
+        <Class IRI="SignalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SignalEvent"/>
+        <Class abbreviatedIRI="dul:Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SignalInermediateEvent"/>
+        <Class IRI="SignalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SignalStartEvent"/>
+        <Class IRI="SignalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StartEvent"/>
+        <Class abbreviatedIRI="dul:Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemData"/>
+        <Class abbreviatedIRI="dul:SocialObjectAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TaxFraudInvestigator"/>
+        <Class abbreviatedIRI="dul:SocialPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Taxpayer"/>
+        <Class abbreviatedIRI="dul:SocialPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TimerEndEvent"/>
+        <Class IRI="TimerEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TimerEvent"/>
+        <Class abbreviatedIRI="dul:Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TimerStartEvent"/>
+        <Class IRI="TimerEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TisAgent"/>
+        <Class abbreviatedIRI="dul:PhysicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TisAnalyst"/>
+        <Class abbreviatedIRI="dul:SocialPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Vendor"/>
+        <Class abbreviatedIRI="dul:SocialPerson"/>
+    </SubClassOf>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasInvoice"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="isInvoiceOf"/>
+        </ObjectInverseOf>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasInvoice"/>
+        <ObjectProperty abbreviatedIRI="dul:hasMember"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasInvoiceItem"/>
+        <ObjectProperty abbreviatedIRI="dul:hasMember"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isInvoiceItemOf"/>
+        <ObjectProperty abbreviatedIRI="dul:isMemberOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isInvoiceOf"/>
+        <ObjectProperty abbreviatedIRI="dul:isMemberOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasVendor"/>
+        <ObjectProperty IRI="hasMFE"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="hasTaxpayer"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="isInvoiceOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="hasInvoice"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasInvoice"/>
+        <Class IRI="InvoiceBatch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasInvoiceItem"/>
+        <Class IRI="Invoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTaxpayer"/>
+        <Class IRI="Invoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasVendor"/>
+        <Class IRI="MFE"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasInvoice"/>
+        <Class IRI="Invoice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasInvoiceItem"/>
+        <Class IRI="InvoiceItem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTaxpayer"/>
+        <Class IRI="Taxpayer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasVendor"/>
+        <Class IRI="Vendor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isWasTriggeredBy"/>
+        <Class IRI="Invoice"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ActivationDate"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Amount"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="AverageCountPerDay"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="AverageInvoicesAmountPerDay"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="AverageTaxPaid"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="AverageTaxPaidDifference"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CFOPCodeFormatNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CFOPCodeFormatStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CFOPCodeStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CFOPStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CFOPcode"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CNAE"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CPF"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CPFStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CPFStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CancelledInvoicesStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CancelledInvoicesStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="City"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="CurrentDate"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="DailyAmountOfInvoicesSD"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="DailyCountOfInvoices"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="DailyCountOfInvoicesSD"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="DailyInvoicesAmount"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="DateTime"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="DeviceNumber"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="FormOfPayment"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="FraudStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InactivityStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InactivityStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InvoiceCountStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InvoiceCountStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InvoiceID"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InvoiceItemNumber"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InvoiceOperationCode"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InvoicesAmountStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InvoicesAmountStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ItemCost"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ItemTaxStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="LastInvoiceReceivedData"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MFEActivatedStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MFEActivatedStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MarketSegment"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="NCM"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="NCMFormatNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="NCMFormatStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="NCMStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="NCMStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="NumberOfInvoices"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="NumbersOfTaxpayers"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="PaymentStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="PaymentStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="PermittedCancellationRate"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="PermittedMFEInactivity"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="PostalCode"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ProcessingStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ProductCode"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ProductDescription"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ProductTotalValue"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RegisterNumber"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="SystemTime"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="TaxRate"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="TaxSituationCode"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="TaxSituationCodeFormatNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="TaxSituationCodeFormatStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="TaxSituationCodeNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="TaxSituationCodeStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="TaxValue"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="TaxpayerID"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ValidityStatus"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ValidityStatusNotification"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="VendorID"/>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="AverageTaxPaid"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="AverageTaxPaidDifference"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="FraudStatus"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="InvoiceItemNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="InvoiceOperationCode"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="ItemCost"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="NumberOfInvoices"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="NumbersOfTaxpayers"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="PermittedCancellationRate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="ProcessingStatus"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="ProductCode"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="ProductTotalValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="TaxRate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="TaxValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="TaxpayerID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="ValidityStatus"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dul:hasDataValue"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ActivationDate"/>
+        <Class IRI="MFE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Amount"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AverageCountPerDay"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AverageInvoicesAmountPerDay"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AverageTaxPaid"/>
+        <Class IRI="Taxpayer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AverageTaxPaidDifference"/>
+        <Class IRI="Taxpayer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CFOPCodeFormatNotification"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CFOPCodeFormatStatus"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CFOPCodeStatus"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CFOPStatusNotification"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CFOPcode"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CNAE"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CPF"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CPFStatus"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CPFStatusNotification"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CancelledInvoicesStatus"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CancelledInvoicesStatusNotification"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="City"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CurrentDate"/>
+        <Class IRI="SystemData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DailyAmountOfInvoicesSD"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DailyCountOfInvoices"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DailyCountOfInvoicesSD"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DailyInvoicesAmount"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DateTime"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DeviceNumber"/>
+        <ObjectUnionOf>
+            <Class IRI="Invoice"/>
+            <Class IRI="MFE"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="FormOfPayment"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="FraudStatus"/>
+        <Class IRI="Taxpayer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InactivityStatus"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InactivityStatusNotification"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InvoiceCountStatus"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InvoiceCountStatusNotification"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InvoiceID"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InvoiceItemNumber"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InvoiceOperationCode"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InvoicesAmountStatus"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InvoicesAmountStatusNotification"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ItemCost"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ItemTaxStatus"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="LastInvoiceReceivedData"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="MFEActivatedStatus"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="MFEActivatedStatusNotification"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="MarketSegment"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="NCM"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="NCMFormatNotification"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="NCMFormatStatus"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="NCMStatus"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="NCMStatusNotification"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="NumberOfInvoices"/>
+        <ObjectUnionOf>
+            <Class IRI="SystemData"/>
+            <Class IRI="Vendor"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="NumbersOfTaxpayers"/>
+        <Class IRI="SystemData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="PaymentStatus"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="PaymentStatusNotification"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="PermittedCancellationRate"/>
+        <ObjectUnionOf>
+            <Class IRI="SystemData"/>
+            <Class IRI="Vendor"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="PermittedMFEInactivity"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="PostalCode"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ProcessingStatus"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ProductCode"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ProductDescription"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ProductTotalValue"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="RegisterNumber"/>
+        <Class IRI="Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="SystemTime"/>
+        <Class IRI="SystemData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="TaxRate"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="TaxSituationCode"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="TaxSituationCodeFormatNotification"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="TaxSituationCodeFormatStatus"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="TaxSituationCodeNotification"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="TaxSituationCodeStatus"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="TaxValue"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="TaxpayerID"/>
+        <Class IRI="Taxpayer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ValidityStatus"/>
+        <Class abbreviatedIRI="dul:InformationObject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ValidityStatusNotification"/>
+        <Class IRI="InvoiceItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="VendorID"/>
+        <Class IRI="Vendor"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="ActivationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Amount"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="AverageCountPerDay"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="AverageInvoicesAmountPerDay"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="AverageTaxPaid"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;double">0.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="AverageTaxPaidDifference"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CFOPCodeFormatNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CFOPCodeFormatStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CFOPCodeStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CFOPStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CFOPcode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CNAE"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CPF"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CPFStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CPFStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CancelledInvoicesStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CancelledInvoicesStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="City"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Aquiraz</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Aracati</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Canindé</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Cascavel</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Caucaia</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Crateús</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Crato</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Icó</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Iguatu</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Itapipoca</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Juazeiro do Norte</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Maracanaú</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Maranguape</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Pacatuba</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Quixadá</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Quixeramobim</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Russas</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Sobral</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Tianguá</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CurrentDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DailyAmountOfInvoicesSD"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DailyCountOfInvoices"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DailyCountOfInvoicesSD"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DailyInvoicesAmount"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DeviceNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="FraudStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">no violation</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">violation</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InactivityStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InactivityStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InvoiceCountStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InvoiceCountStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InvoiceID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InvoiceItemNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InvoiceOperationCode"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;maxInclusive">
+                <Literal datatypeIRI="&xsd;integer">7999</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">1000</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InvoicesAmountStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="InvoicesAmountStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ItemCost"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;double">0.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ItemTaxStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">not-valid</Literal>
+            <Literal datatypeIRI="&xsd;string">valid</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="LastInvoiceReceivedData"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="MFEActivatedStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="MFEActivatedStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="MarketSegment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="NCM"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="NCMFormatNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="NCMFormatStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="NCMStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="NCMStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="NumberOfInvoices"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="NumbersOfTaxpayers"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="PaymentStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="PaymentStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="PermittedCancellationRate"/>
+        <Datatype IRI="percent"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="PermittedMFEInactivity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="PostalCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ProcessingStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">Not Processed</Literal>
+            <Literal datatypeIRI="&xsd;string">Processed</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ProductCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ProductDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ProductTotalValue"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;double">0.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="SystemTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="TaxRate"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <FacetRestriction facet="&xsd;maxInclusive">
+                <Literal datatypeIRI="&xsd;integer">100</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="TaxSituationCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="TaxSituationCodeFormatNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="TaxSituationCodeFormatStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="TaxSituationCodeNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="TaxSituationCodeStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">not-valid</Literal>
+            <Literal datatypeIRI="&xsd;string">valid</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="TaxValue"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="TaxpayerID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ValidityStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">not-valid</Literal>
+            <Literal datatypeIRI="&xsd;string">valid</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ValidityStatusNotification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>AverageTaxPaid</IRI>
+        <Literal datatypeIRI="&xsd;string">has average tax paid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>AverageTaxPaid</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>AverageTaxPaid</IRI>
+        <Literal datatypeIRI="&xsd;string">tem imposto médio pago</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>AverageTaxPaidDifference</IRI>
+        <Literal datatypeIRI="&xsd;string">has average tax paid difference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>AverageTaxPaidDifference</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>AverageTaxPaidDifference</IRI>
+        <Literal datatypeIRI="&xsd;string">tem diferença de imposto pago média</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>CFOPcode</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{4}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>CNAE</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{4}.[0-9]{3}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>CPF</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>City</IRI>
+        <Literal datatypeIRI="&xsd;string">has city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>City</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>City</IRI>
+        <Literal datatypeIRI="&xsd;string">tem cidade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>DateTime</IRI>
+        <Literal datatypeIRI="&xsd;string">has date and time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>DateTime</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>DateTime</IRI>
+        <Literal datatypeIRI="&xsd;string">tem data e hora</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>DeviceNumber</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{9}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>EndEvent</IRI>
+        <Literal datatypeIRI="&xsd;string">End event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>EndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Evento final</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An End Event is activated when a process terminates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>Invoice</IRI>
+        <Literal datatypeIRI="&xsd;string">&quot;Invoice&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>Invoice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Invoice</IRI>
+        <Literal datatypeIRI="&xsd;string">An invoice is an electronic transaction containing information about a purchase by a consumer of a good or service from a vendor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>InvoiceBatch</IRI>
+        <Literal datatypeIRI="&xsd;string">&quot;Invoice batch&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>InvoiceBatch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lote de faturas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>InvoiceBatch</IRI>
+        <Literal datatypeIRI="&xsd;string">An InvoiceBatch is a collection of Invoices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>InvoiceID</IRI>
+        <Literal datatypeIRI="&xsd;string">has invoice ID number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>InvoiceID</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>InvoiceID</IRI>
+        <Literal datatypeIRI="&xsd;string">tem número de identificação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>InvoiceID</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{6}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>InvoiceItem</IRI>
+        <Literal datatypeIRI="&xsd;string">&quot;Invoice item&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>InvoiceItem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Item de fatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>InvoiceItem</IRI>
+        <Literal datatypeIRI="&xsd;string">An invoiceItem is a line item (of which there may be many) on an Invoice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>InvoiceItemNumber</IRI>
+        <Literal datatypeIRI="&xsd;string">has invoice item number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>InvoiceItemNumber</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>InvoiceItemNumber</IRI>
+        <Literal datatypeIRI="&xsd;string">tem número do item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>InvoiceOperationCode</IRI>
+        <Literal datatypeIRI="&xsd;string">has invoice operation code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>InvoiceOperationCode</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>InvoiceOperationCode</IRI>
+        <Literal datatypeIRI="&xsd;string">tem código de operação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>ItemCost</IRI>
+        <Literal datatypeIRI="&xsd;string">has item cost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>ItemCost</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>ItemCost</IRI>
+        <Literal datatypeIRI="&xsd;string">tem custo do item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>ItemTaxStatus</IRI>
+        <Literal datatypeIRI="&xsd;string">has item tax status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>ItemTaxStatus</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>ItemTaxStatus</IRI>
+        <Literal datatypeIRI="&xsd;string">tem situação fiscal artigo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>KbAgent</IRI>
+        <Literal datatypeIRI="&xsd;string">&quot;Knowldge base agent&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>KbAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agente de base de conocimientos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>KbAgent</IRI>
+        <Literal datatypeIRI="&xsd;string">A KnowledgeBaseAgent is a software Agent or SubAgent responsible for implementing knowlege base queries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>MessageEndEvent</IRI>
+        <Literal datatypeIRI="&xsd;string">Send message end event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>MessageEndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Enviar evento final mensagem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MessageEndEvent</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MessageEndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A Message End Event is an End Event that also passes a message from the terminating process to another process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>MessageEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Message event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>MessageEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mensagem evento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MessageEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A Message Event throws a message from one process to another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>MessageIntermediateEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Send message intermediate event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>MessageIntermediateEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Enviar mensagem de evento intermediário</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>MessageStartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Receive message start event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>MessageStartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Receba evento de início de mensagem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>NCM</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{4}.[0-9]{2}.[0-9]{2}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>NumberOfInvoices</IRI>
+        <Literal datatypeIRI="&xsd;string">number of taxpayer invoices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>NumberOfInvoices</IRI>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>NumberOfInvoices</IRI>
+        <Literal datatypeIRI="&xsd;string">número de notas fiscais dos contribuintes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>NumbersOfTaxpayers</IRI>
+        <Literal datatypeIRI="&xsd;string">number of taxpayers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>NumbersOfTaxpayers</IRI>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>NumbersOfTaxpayers</IRI>
+        <Literal datatypeIRI="&xsd;string">número de contribuintes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>PermittedCancellationRate</IRI>
+        <Literal datatypeIRI="&xsd;string">permitted tolerance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>PermittedCancellationRate</IRI>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>PermittedCancellationRate</IRI>
+        <Literal datatypeIRI="&xsd;string">tolerância permitida</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>PostalCode</IRI>
+        <Literal datatypeIRI="&xsd;string">has postal code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>PostalCode</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>PostalCode</IRI>
+        <Literal datatypeIRI="&xsd;string">tem código postal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>ProcessingStatus</IRI>
+        <Literal datatypeIRI="&xsd;string">has processing status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>ProcessingStatus</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>ProcessingStatus</IRI>
+        <Literal datatypeIRI="&xsd;string">tem status de processamento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>ProductCode</IRI>
+        <Literal datatypeIRI="&xsd;string">has product code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>ProductCode</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>ProductCode</IRI>
+        <Literal datatypeIRI="&xsd;string">tem o código do produto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>ProductDescription</IRI>
+        <Literal datatypeIRI="&xsd;string">has product description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>ProductDescription</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>ProductDescription</IRI>
+        <Literal datatypeIRI="&xsd;string">tem descrição do produto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>ProductTotalValue</IRI>
+        <Literal datatypeIRI="&xsd;string">has product total value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>ProductTotalValue</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>ProductTotalValue</IRI>
+        <Literal datatypeIRI="&xsd;string">tem valor total do produto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>RegisterNumber</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{3}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>SignalEndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Signal end event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>SignalEndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Evento de fim de sinais</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>SignalEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Signal event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>SignalEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Evento de sinal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>SignalInermediateEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Signal intermediate event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>SignalInermediateEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sinalizar evento intermediário</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>SignalStartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Signal start event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>SignalStartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sinal evento de início</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>StartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Start event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>StartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Comece evento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>SystemData</IRI>
+        <Literal datatypeIRI="&xsd;string">Global data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>SystemData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dados globais</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SystemData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Global data stores data accesible globally to the application.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>SystemTime</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TaxFraudInvestigator</IRI>
+        <Literal datatypeIRI="&xsd;string">&quot;Tax fraud investigator&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TaxFraudInvestigator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Investigador de fraude fiscal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TaxFraudInvestigator</IRI>
+        <Literal datatypeIRI="&xsd;string">A TaxFraudInvestigator is a Natural Person that, like the TISAnalyst uses the application to conduct fraud investigations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TaxRate</IRI>
+        <Literal datatypeIRI="&xsd;string">has tax rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>TaxRate</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TaxRate</IRI>
+        <Literal datatypeIRI="&xsd;string">tem taxa de imposto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>TaxSituationCode</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{2}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TaxSituationCodeStatus</IRI>
+        <Literal datatypeIRI="&xsd;string">has operation code status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>TaxSituationCodeStatus</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TaxSituationCodeStatus</IRI>
+        <Literal datatypeIRI="&xsd;string">tem o estatuto de código de operação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TaxValue</IRI>
+        <Literal datatypeIRI="&xsd;string">has tax value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>TaxValue</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TaxValue</IRI>
+        <Literal datatypeIRI="&xsd;string">tem imposto sobre o valor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>Taxpayer</IRI>
+        <Literal datatypeIRI="&xsd;string">&quot;Taxpayer&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>Taxpayer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contribuinte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Taxpayer</IRI>
+        <Literal datatypeIRI="&xsd;string">&quot;The taxpayer in this application is a vendor company/organization providing some good or service, and that pays taxes collected from consumers to the State of Ceara&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TaxpayerID</IRI>
+        <Literal datatypeIRI="&xsd;string">has taxpayer identification number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>TaxpayerID</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TaxpayerID</IRI>
+        <Literal datatypeIRI="&xsd;string">tem o número de identificação de contribuinte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TimerEndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Timer end event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TimerEndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Evento final temporizador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TimerEndEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Timer End Event ends a process when it is both activated and a specified point in time occurs..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TimerEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Evento timer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TimerEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Timer event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TimerEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Timer Event catches when a specified point in time occurs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TimerStartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Timer start event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TimerStartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temporizador evento de inicio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TimerStartEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Timer Start Event starts a process when a specified point in time occurs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TisAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TIS Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TisAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TIS Agente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TisAgent</IRI>
+        <Literal datatypeIRI="&xsd;string">A TIS Analyst is a Natural Person that uses the TIS application to conduct evaluations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>TisAnalyst</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TIS Analyst</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>TisAnalyst</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TIS Analista</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TisAnalyst</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A TIS Analyst is a Natural Person that uses the TIS application to conduct evaluations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>ValidityStatus</IRI>
+        <Literal datatypeIRI="&xsd;string">as validity status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="isUserModifiable"/>
+        <IRI>ValidityStatus</IRI>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>ValidityStatus</IRI>
+        <Literal datatypeIRI="&xsd;string">tem status de validade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="regex"/>
+        <IRI>VendorID</IRI>
+        <Literal datatypeIRI="&xsd;string">[0-9]{2}.[0-9]{3}.[0-9]{3}\/[0-9]{3}-[0-9]{2}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="en_label"/>
+        <IRI>hasTaxpayer</IRI>
+        <Literal datatypeIRI="&xsd;string">has taxpayer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>hasTaxpayer</IRI>
+        <Literal datatypeIRI="&xsd;string">Relates an Invoice to a Taxpayer and indicates that the Invoice was created by the specified Taxpayer (a vendor-company or organization).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>hasTaxpayer</IRI>
+        <Literal datatypeIRI="&xsd;string">tem contribuinte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>isWasTriggeredBy</IRI>
+        <Literal datatypeIRI="&xsd;string">was triggered by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="pt_BR_label"/>
+        <IRI>isWasTriggeredBy</IRI>
+        <Literal datatypeIRI="&xsd;string">é desencadeada por</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:topDataProperty</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <DatatypeDefinition>
+        <Datatype IRI="percent"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:double"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;double">0.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
