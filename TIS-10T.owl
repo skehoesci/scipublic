@@ -23,8 +23,6 @@
     <Prefix name="xml" IRI="&xml;#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</Import>
-    <Import>http://www.w3.org/XML/1998/namespace</Import>
     <Declaration>
         <Class IRI="CancelledInvoice"/>
     </Declaration>
